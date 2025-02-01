@@ -1,0 +1,5 @@
+Sword|Weapon|A sharp blade|Basic|3|2
+Shield|Armor|A sturdy shield|Heavy|2|3
+Axe|Weapon|A double-headed axe|Heavy|4|2
+Bow|Weapon|A long-range weapon|Ranged|1|1
+Dagger|Weapon|A small, sharp blade|Quick|2|2

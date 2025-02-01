@@ -1,0 +1,11 @@
+Blade|Melee Weapon|A sharp blade|None|8|2|100
+Broadsword|Melee Weapon|A sharp blade|Bulky|8|2|500
+Club|Melee Weapon|Literally a club|None|8|1|0
+Cutlass|Melee Weapon|A cutlass|None|8|2|200
+Dagger|Melee Weapon|A dagger|None|8|1|10
+Rapier|Melee Weapon|A rapier|None|8|3|200
+Shield|Melee Weapon|A shield|None|8|1|150
+Staff|A quarterstaff|None|8|1|0
+Stunstick|Melee Weapon|A stunstick|Stun|8|8|300
+Laser Gun|weapon|A high-powered energy weapon|fast, durable|3|12|1500
+Standard Rifle|weapon|A standard infantry rifle|reliable, ranged|5|8|100
