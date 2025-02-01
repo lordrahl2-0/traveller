@@ -26,9 +26,10 @@ def load_items(file_name):
     return items
 
 def generate_price(base_price, fluctuation_percentage=0.2):
-    """Generate a random price around a nominal value with a fluctuation range."""
+    """Generate a random price around a nominal value with a fluctuation range, returned as a whole number."""
     fluctuation = base_price * random.uniform(-fluctuation_percentage, fluctuation_percentage)
-    return round(base_price + fluctuation, 2)
+    price = base_price + fluctuation
+    return int(round(price))  # Ensure price is a whole number by rounding and converting to an integer
 
 def generate_stock(min_stock=1, max_stock=10):
     """Generate a random stock level."""
@@ -171,13 +172,13 @@ def main():
     
     # Prompt user for tech level
     try:
-        max_tech_level = int(input("Enter your tech level (0-15): ").strip())
+        max_tech_level = int(input("Enter your tech level (0-20): ").strip())
     except ValueError:
         print("Invalid input for tech level.")
         return
     
-    if not (0 <= max_tech_level <= 15):
-        print("Tech level must be between 0 and 15.")
+    if not (0 <= max_tech_level <= 20):
+        print("Tech level must be between 0 and 20.")
         return
     
     # Prompt user for store size

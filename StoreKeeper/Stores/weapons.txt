@@ -2,10 +2,34 @@ Blade|Melee Weapon|A sharp blade|None|8|2|100
 Broadsword|Melee Weapon|A sharp blade|Bulky|8|2|500
 Club|Melee Weapon|Literally a club|None|8|1|0
 Cutlass|Melee Weapon|A cutlass|None|8|2|200
-Dagger|Melee Weapon|A dagger|None|8|1|10
+Dagger|Melee Weapon|A dagger|None|5|1|10
 Rapier|Melee Weapon|A rapier|None|8|3|200
 Shield|Melee Weapon|A shield|None|8|1|150
 Staff|A quarterstaff|None|8|1|0
-Stunstick|Melee Weapon|A stunstick|Stun|8|8|300
-Laser Gun|weapon|A high-powered energy weapon|fast, durable|3|12|1500
-Standard Rifle|weapon|A standard infantry rifle|reliable, ranged|5|8|100
+Stunstick|Melee Weapon|A stunstick|Stun|5|8|300
+Antique Pistol|Slug Pistol|||5|3|100
+Autopistol|Slug Pistol|||5|6|200
+Body Pistol|Slug Pistol|||1|8|500
+Gauss Pistol|Slug Pistol||AP 3, Auto-2|3|13|500
+Revolver|Slug Pistol|||6|5|150
+Snub Pistol|Slug Pistol||Zero-G|5|8|150
+Accelerator Rifle|Slug Rifle||Zero-G|6|9|900
+Advanced Combat Rifle|Slug Rifle||Auto-3, Scope|3|10|1000
+Antique Rifle|Slug Rifle|||6|3|150
+Assault Rifle|Slug Rifle||Auto-2|4|7|500
+Autorifle|Slug Rifle||Auto-2|4|6|750
+Gauss Rifle|Slug Rifle||AP 5, Auto-3, Scope|3|12|1500
+Rifle|Slug Rifle|||6|5|200
+Shotgun|Slug Rifle||Bulky|7|4|200
+Submachine Gun|Slug Rifle||Auto-3|4|6|400
+Laser Pistol|Energy Pistol||Zero-G|2|9|2000
+Laser Pistol|Energy Pistol||Zero-G|2|11|3000
+Stunner|Energy Pistol||Stun, Zero-G|8|8|500
+Stunner|Energy Pistol||Stun, Zero-G|8|10|750
+Stunner|Energy Pistol||Stun, Zero-G|8|12|1000
+Laser Carbine|Energy Rifle||Zero-G|2|9|2500
+Laser Carbine|Energy Rifle||Zero-G|2|11|4000
+Laser Rifle|Energy Rifle||Zero-G|2|9|3500
+Laser Rifle|Energy Rifle||Zero-G|2|11|8000
+Laser Sniper Rifle|Energy Rifle||Scope, Zero-G|2|12|9000
+Plasma Rifle|Energy Rifle||Zero-G|2|16|100000
