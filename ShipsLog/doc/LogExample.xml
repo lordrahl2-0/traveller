@@ -87,5 +87,18 @@
       <CargoStatus></CargoStatus>
       <EntryBody></EntryBody>
     </LogEntry>
+    <FlightPlan>
+      <Sequence></Sequence>
+      <DepartureDate></DepartureDate>
+      <DepartureLocation></DepartureLocation>
+      <ArrivalDate></ArrivalDate>
+      <ArrivalLocation></ArrivalLocation>
+      <ExpectedTravelTime></ExpectedTravelTime>
+      <Route></Route>
+      <PersonsOnBoard></PersonsOnBoard>
+      <TypeofJourney></TypeofJourney>
+      <Remarks></Remarks>
+      <PilotInCommand></PilotInCommand>
+    </FlightPlan>
   </LogRecords>
 </ShipsLog>
