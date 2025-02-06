@@ -22,7 +22,12 @@ class TravellerTradeGUI:
         self.category_label = tk.Label(root, text="Select Trade Category")
         self.category_label.pack()
 
-        self.trade_categories = ["Common Goods", "Luxury Items", "Industrial Materials"]
+        self.trade_categories = [
+            "Common Goods",
+            "Luxury Items",
+            "Industrial Materials",
+            "Rare Commodities",
+        ]
         self.category_var = tk.StringVar(root)
         self.category_var.set(self.trade_categories[0])
 
@@ -30,6 +35,17 @@ class TravellerTradeGUI:
             root, self.category_var, *self.trade_categories
         )
         self.category_menu.pack()
+
+        # Market Condition Selection
+        self.market_label = tk.Label(root, text="Select Market Condition")
+        self.market_label.pack()
+
+        self.market_conditions = ["Booming", "Stable", "Depressed"]
+        self.market_var = tk.StringVar(root)
+        self.market_var.set(self.market_conditions[1])
+
+        self.market_menu = tk.OptionMenu(root, self.market_var, *self.market_conditions)
+        self.market_menu.pack()
 
         # Calculate Trade Button
         self.calculate_button = tk.Button(
@@ -50,7 +66,21 @@ class TravellerTradeGUI:
         try:
             dice_roll = int(self.dice_entry.get())
             category = self.category_var.get()
-            trade_result = f"Trade calculation for roll {dice_roll} in category {category}: (Placeholder calculations)"
+            market_condition = self.market_var.get()
+
+            base_price = random.randint(100, 1000)  # Placeholder price logic
+            modifier = {"Booming": 1.5, "Stable": 1.0, "Depressed": 0.7}[
+                market_condition
+            ]
+            final_price = base_price * modifier
+
+            trade_result = (
+                f"Trade Roll: {dice_roll}\n"
+                f"Category: {category}\n"
+                f"Market: {market_condition}\n"
+                f"Base Price: {base_price} credits\n"
+                f"Final Price: {final_price:.2f} credits"
+            )
 
             self.output_text.delete("1.0", tk.END)
             self.output_text.insert(tk.END, trade_result)
