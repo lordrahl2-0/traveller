@@ -1,0 +1,35 @@
+# This generator creates an Imperial ID Number for a Traveller Character
+# The output format is nn-AA-nnnn-AA
+
+import random
+import hashlib
+
+print("Welcome to the Imperial Records Bureau ID Number Service.")
+
+
+def generate_personal_code(name, dob, homeworld):
+    input_string = f"{name.lower()}|{dob}|{homeworld}"
+    hash_obj = hashlib.md5(input_string.encode())  # Generate hash
+    hex_digest = hash_obj.hexdigest()
+
+    numbers1 = "".join(
+        [str(int(hex_digest[i : i + 2], 16) % 10) for i in range(0, 4, 2)]
+    )
+    letters1 = "".join(
+        [chr(65 + (int(hex_digest[i : i + 2], 16) % 26)) for i in range(4, 8, 2)]
+    )
+    numbers2 = "".join(
+        [str(int(hex_digest[i : i + 2], 16) % 10) for i in range(8, 16, 2)]
+    )
+    letters2 = "".join(
+        [chr(65 + (int(hex_digest[i : i + 2], 16) % 26)) for i in range(16, 20, 2)]
+    )
+
+    return f"{numbers1}-{letters1}-{numbers2}-{letters2}"
+
+
+name = input("Enter your Full Name in the format First Name Last Name: ")
+dob = input("Enter your date of birth (YYYY-DDD): ")
+homeworld = input("Enter your Homeworld in the format World/Subsector/Sector: ")
+code = generate_personal_code(name, dob, homeworld)
+print("Generated Code:", code)
