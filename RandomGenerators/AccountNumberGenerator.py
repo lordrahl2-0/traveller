@@ -1,8 +1,10 @@
 # This generator creates an Account Number for a Traveller Character
 # or business based on the input - the output format is AAAAnnnn.
 
-import random
 import hashlib
+import os
+
+os.system("cls" if os.name == "nt" else "clear")
 
 print("Welcome to the Imperial Interstellar Bank Account Number Generator!")
 accountType = input("Choose the type of account (Business or Personal)[b/p]: ")
