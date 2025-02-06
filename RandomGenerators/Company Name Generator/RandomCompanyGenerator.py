@@ -31,7 +31,7 @@ def generate_company_name(category):
 
 
 def main():
-    categories = ["retail", "weapons", "vehicles", "luxury"]
+    categories = ["retail", "weapons", "vehicles", "luxury", "starships"]
     category = input(f"Enter company type ({', '.join(categories)}): ").strip().lower()
 
     if category not in categories:
